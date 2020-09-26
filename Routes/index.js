@@ -1,5 +1,6 @@
-const Router = require('express').Router()
+const router = require('express').Router()
 
-Router.use('/api', require('./bookRoutes.js'))
+router.use('/api', require('./bookRoutes.js'))
+router.use('/api', require('./googleapis.js'))
 
-module.exports = Router
+module.exports = router

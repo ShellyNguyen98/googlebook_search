@@ -26,3 +26,5 @@ router.delete('/book/:id', (req, res) => {
             .then(book => res.json(book))
             .catch(err => console.log(err))
 })
+
+module.exports = router
